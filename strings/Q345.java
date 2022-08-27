@@ -9,7 +9,7 @@ public class Q345 {
 		int i = 0;
 		int j = s.length() - 1;
 		char[] chArr = s.toCharArray();
-		while (i<=j) {
+		while (i<j) {
 			if (isVowel(chArr[i]) && isVowel(chArr[j])) {
 				//swap if both are vowel
 				char temp = chArr[i];
@@ -31,9 +31,9 @@ public class Q345 {
 	public static void main(String[] args) {
 		
 		System.out.println(reverseVowels("Hello")); //Holle
-		System.out.println(reverseVowels("Let's go yes/no"));
-		System.out.println(reverseVowels("aoeu"));
-		System.out.println(reverseVowels("oeu"));
+		System.out.println(reverseVowels("Let's go yes/no")); //Lot's ge yos/ne
+		System.out.println(reverseVowels("aoeu")); //ueoa
+		System.out.println(reverseVowels("oeu")); //ueo
 
 	}
 
