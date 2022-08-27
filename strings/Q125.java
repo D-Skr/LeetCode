@@ -14,10 +14,21 @@ public class Q125 {
         // }
         // return true;
         
-        //v.2
-        String normalized = s.replaceAll("[^A-Za-z0-9]", "").toLowerCase();
-        StringBuilder rev = new StringBuilder(normalized);
-        return normalized.equals(rev.reverse().toString());
+        //v.2 with 2 pointers
+    	StringBuilder s2 = new StringBuilder(s.replaceAll("[^A-Za-z0-9]","").toLowerCase());
+    	int left = 0;
+    	int right = s2.length() - 1;
+    	while (left < right) {
+    		if (s2.charAt(left) != s2.charAt(right)) return false;
+    		left++;
+    		right--;
+    	}
+    	return true;
+    	
+    	//v.3
+//        String normalized = s.replaceAll("[^A-Za-z0-9]", "").toLowerCase();
+//        StringBuilder rev = new StringBuilder(normalized);
+//        return normalized.equals(rev.reverse().toString());
     }
     
 	public static void main(String[] args) {
@@ -26,6 +37,7 @@ public class Q125 {
 		System.out.println(isPalindrome("0P")); //false
 		System.out.println(isPalindrome("1a1")); //true
 		System.out.println(isPalindrome(" ")); //true
+		System.out.println(isPalindrome("12.opachki")); //true
 
 	}
 
