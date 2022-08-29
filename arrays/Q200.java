@@ -28,14 +28,27 @@ public class Q200 {
         dfs(grid, r, c+1);
     }
 	public static void main(String[] args) {
-		char[][] grid  = {
+		char[][] grid1 = {
 				{'1','1','0','0','0'},
 				{'1','1','0','0','0'},
 				{'0','0','1','0','0'},
 				{'0','0','0','1','1'}
 		};
-		
-		System.out.println(numIslands(grid)); //3
+		char[][] grid2 = {
+				{'1','1','1','1','0'},
+				{'1','1','0','1','0'},
+				{'1','1','0','0','0'},
+				{'1','0','0','0','0'}
+		};
+		char[][] grid3 = {
+				{'1','1','1','1','0'},
+				{'1','1','0','1','0'},
+				{'1','1','0','0','0'},
+				{'1','0','0','1','1'}
+		};
+		System.out.println(numIslands(grid1)); //3
+		System.out.println(numIslands(grid2)); //1
+		System.out.println(numIslands(grid3)); //2
 
 	}
 
