@@ -20,7 +20,7 @@ public class CountElements {
 	}
 	public static void main(String[] args) {
 		displayFreqOfEachElement(new int[] 
-				{1,4,1,2,2,3,1,3,6,1,1,5,4,4,1,6,2,5,2,5,2,5});
+				{1,4,1,2,2,3,1,3,6,1,1,5,4,4,1,6,2,5,2,5,2,5,0});
 
 	}
 
