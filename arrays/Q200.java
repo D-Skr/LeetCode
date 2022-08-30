@@ -22,8 +22,8 @@ public class Q200 {
         if (r < 0 || c < 0 || r >= grid.length || c >= grid[0].length || grid[r][c] == '0') return;
         
         grid[r][c] = '0';
-        dfs(grid, r-1, c); // North
-        dfs(grid, r+1, c); // South
+        dfs(grid, r-1, c); // South
+        dfs(grid, r+1, c); // North
         dfs(grid, r, c-1); // West
         dfs(grid, r, c+1); // East
     }
