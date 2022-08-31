@@ -3,7 +3,7 @@ package strings;
 import java.util.Arrays;
 import java.util.HashMap;
 
-public class Q1 {
+public class Q1TwoSum {
 	
 	//1.Two Sum
     public static int[] twoSum(int[] nums, int target) {

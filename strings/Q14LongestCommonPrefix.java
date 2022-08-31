@@ -2,7 +2,7 @@ package strings;
 
 import java.util.Arrays;
 
-public class Q14 {
+public class Q14LongestCommonPrefix {
 
 	//14. Longest Common Prefix
 	

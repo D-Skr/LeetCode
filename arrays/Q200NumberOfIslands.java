@@ -1,6 +1,6 @@
 package arrays;
 
-public class Q200 {
+public class Q200NumberOfIslands {
 	//200. Number of Islands
 
     public static int numIslands(char[][] grid) {

@@ -1,6 +1,6 @@
 package strings;
 
-public class Q125 {
+public class Q125_ValidPalindrome {
 	
 	// 125. Valid Palindrome
 	

@@ -1,6 +1,6 @@
 package strings;
 
-public class Q557 {
+public class Q557ReverseWordsInStringIII {
 	//557. Reverse Words in a String III
 	
     public static String reverseWords(String s) {

@@ -1,6 +1,6 @@
 package strings;
 
-public class Q345 {
+public class Q345ReverseVowelsOfaString {
 	
 	//345. Reverse Vowels of a String
 	//solution with 2 pointers

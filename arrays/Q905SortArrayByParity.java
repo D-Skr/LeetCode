@@ -2,7 +2,7 @@ package arrays;
 
 import java.util.Arrays;
 
-public class Q905 {
+public class Q905SortArrayByParity {
 	
 	//905. Sort Array By Parity
 	public static int[] sortArrayByParity(int[] nums) {
