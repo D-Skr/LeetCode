@@ -23,9 +23,9 @@ public class Q242ValidAnagram {
         return true;
     }
 	public static void main(String[] args) {
-		String s1 = "anogram";
-		String s2 = "onagram";
-		String s3 = "ooagram";
+		String s1 = "anagram";
+		String s2 = "naagram";
+		String s3 = "ooogram";
 		System.out.println(isAnagram(s1,s2)); //true
 		System.out.println(isAnagram(s2,s3)); //false
 	}
