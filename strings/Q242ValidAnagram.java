@@ -3,7 +3,7 @@ package strings;
 public class Q242ValidAnagram {
     	public static boolean isAnagram(String s, String t) {
         if(s.length() != t.length()) return false;
-        int[] charCount = new int[256];
+        int[] charCount = new int[26];
         char[] ch1 = s.toCharArray();
         char[] ch2 = t.toCharArray();
         
@@ -14,8 +14,8 @@ public class Q242ValidAnagram {
         
         //v.2
         for(int i = 0; i < ch1.length; i++){
-            charCount[ch1[i]]++;
-            charCount[ch2[i]]--;
+            charCount[ch1[i]-'a']++;
+            charCount[ch2[i]-'a']--;
         }
         for(int i = 0; i < charCount.length; i++){
             if(charCount[i] != 0) return false;
