@@ -25,10 +25,10 @@ public class MatchParentheses {
 	
 	public static void main(String[] args) {
 		System.out.println(hasMatchingParentheses("((string()))")); //true
-		System.out.println(hasMatchingParentheses("((string)))")); //false
-		System.out.println(hasMatchingParentheses("string()))")); //false
-		System.out.println(hasMatchingParentheses("()string()")); //true
-		System.out.println(hasMatchingParentheses("((string(")); //false
+		System.out.println(hasMatchingParentheses("((string)))"));  //false
+		System.out.println(hasMatchingParentheses("string()))"));   //false
+		System.out.println(hasMatchingParentheses("()string()"));   //true
+		System.out.println(hasMatchingParentheses("((string("));    //false
 	}
 
 }
