@@ -39,15 +39,20 @@ public class SortUnsorted {
 	public static void main(String[] args) {
 		int[] arr1 = new int[] {75, 2, 300, 2, 3, 24, -40, 2, 400, 2500, -100, 10};
 		int[] arr2 = new int[] {50, 3000, 1, 0, -11, 45, 5000, -2};
+		int[] arr3 = new int[] {-50, -3000, -1, -11, -45, -5000, -2};
 		
 		sort(arr1,0, 11);
 		sort(arr2,0, 7);
+		sort(arr3,0, 6);
 		
 		//[-100, -40, 2, 2, 2, 3, 10, 24, 75, 300, 400, 2500]
 		System.out.println(Arrays.toString(arr1));
 		
 		//[-11, -2, 0, 1, 45, 50, 3000, 5000]
 		System.out.println(Arrays.toString(arr2));
+		
+		//[-5000, -3000, -50, -45, -11, -2, -1]
+		System.out.println(Arrays.toString(arr3));
 	}
 
 }
