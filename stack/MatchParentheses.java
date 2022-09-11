@@ -3,6 +3,7 @@ package stack;
 import java.util.Stack;
 
 public class MatchParentheses {
+	//only '(' and ')'
 	//return true if parentheses format is valid
 	//return false if parentheses format is invalid
 	
@@ -29,6 +30,8 @@ public class MatchParentheses {
 		System.out.println(hasMatchingParentheses("string()))"));   //false
 		System.out.println(hasMatchingParentheses("()string()"));   //true
 		System.out.println(hasMatchingParentheses("((string("));    //false
+		System.out.println(hasMatchingParentheses("([[[{{{[[[)"));  //true
+		System.out.println(hasMatchingParentheses(""));             //true
 	}
 
 }
