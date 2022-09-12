@@ -34,6 +34,7 @@ public class MatchParentheses2 {
 		String s3 = "({)}";
 		String s4 = "}{";
 		String s5 = "{}";
+		String s6 = "";
 		
 		MatchParentheses2 mp = new MatchParentheses2();
 		System.out.println(mp.isBalanced(s1)); //true
@@ -41,6 +42,7 @@ public class MatchParentheses2 {
 		System.out.println(mp.isBalanced(s3)); //false
 		System.out.println(mp.isBalanced(s4)); //false
 		System.out.println(mp.isBalanced(s5)); //true
+		System.out.println(mp.isBalanced(s6)); //true
 	}
 
 }
