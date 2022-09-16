@@ -28,7 +28,19 @@ public class Q20ValidParentheses {
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		String s1 = "()({[]})[]";
+		String s2 = ")({[]})[]";
+		String s3 = "({)}";
+		String s4 = "}{";
+		String s5 = "{}";
+		String s6 = "";
+		
+		System.out.println(isValid(s1)); //true
+		System.out.println(isValid(s2)); //false
+		System.out.println(isValid(s3)); //false
+		System.out.println(isValid(s4)); //false
+		System.out.println(isValid(s5)); //true
+		System.out.println(isValid(s6)); //true
 
 	}
 
