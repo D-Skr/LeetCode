@@ -17,8 +17,10 @@ public class Q3DoubleOrNothingGame {
 	public static void main(String[] args) {
 		int points = 10;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Your score: " + playGame(points) + ". Type EXIT to exit.");
-		if(sc.nextLine() != "exit" || points != 0)
+		System.out.println("Your score: " + playGame(points));
+		if(sc.nextLine() != "exit" || points != 0) {
 			System.out.println("You lost your points!");
+		sc.close();
+		}
 	}
 }
