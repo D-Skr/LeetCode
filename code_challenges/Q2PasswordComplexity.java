@@ -22,7 +22,7 @@ public class Q2PasswordComplexity {
 		System.out.println("Enter a password: ");
 		String userInput = sc.nextLine();
 		System.out.println("Is the password complex? " + isPasswordComplex(userInput));
-
+		sc.close();
 	}
 
 }

@@ -13,5 +13,6 @@ public class Q1EvenOrOdd {
 		System.out.println("Please enter a number: ");
 		int userNum = scanner.nextInt();
 		System.out.println("Is the number " + userNum + " even? " + isEven(userNum));
+		scanner.close();
 	}
 }
