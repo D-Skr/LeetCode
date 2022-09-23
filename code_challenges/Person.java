@@ -1,6 +1,7 @@
 package code_challenges;
 
 public class Person {
+	// for Q5ModelAPerson challenge
 	private String name;
 	private String lastName;
 	private int age;
