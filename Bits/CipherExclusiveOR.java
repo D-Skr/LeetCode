@@ -1,5 +1,7 @@
 package Bits;
 
+import java.util.Scanner;
+
 public class CipherExclusiveOR {
 	
 	static String msg = "Привет! Пук.";
@@ -20,9 +22,14 @@ public class CipherExclusiveOR {
 
 	public static void main(String[] args) {
 		CipherExclusiveOR ceo = new CipherExclusiveOR();
-		System.out.println(ceo.msg);
-		System.out.println(ceo.encode(msg, 123456789));
-		System.out.println(ceo.decode(encmsg, 123456789));
+
+		System.out.println("Welcome to Mad Cipher App!");
+		System.out.println("You can use absolutelly any languages");
+		System.out.println("The Mad cipher is omnivorous!");
+		
+		while(true) {
+			Scanner console = new Scanner(System.in);
+		}
 
 
 	}
