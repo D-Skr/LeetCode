@@ -8,7 +8,7 @@ public class CipherExclusiveOR {
 	
 	String encode(String msg, int key){
 		for(int i = 0; i < msg.length(); i++) {
-			
+			encmsg += (char)(msg.charAt(i) ^ key);
 		}
 		return encmsg;
 	}
