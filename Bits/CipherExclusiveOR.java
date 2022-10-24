@@ -2,7 +2,7 @@ package Bits;
 
 import java.util.Scanner;
 
-public class CipherExclusiveOR {
+public class CipherExclusiveOr {
 
 	static String msg = "";
 	static String encmsg = "";
@@ -26,6 +26,18 @@ public class CipherExclusiveOR {
 		decmsg = "";
 		key = 0;
 	}
+	
+	static void optionRun() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Please enter your text:");
+		msg = scanner.nextLine();
+		System.out.println("Please enter key in range -2147483648 to 2147483647:");
+		key = Integer.parseInt(scanner.nextLine());
+		System.out.println("Your MAD result is:");
+		System.out.println(encode(msg, key));
+		reset();
+		System.out.println("Please select option 1 - 3");
+	}
 
 	public static void main(String[] args) {
 
@@ -45,26 +57,12 @@ public class CipherExclusiveOR {
 			switch (option) {
 			case ("1"):
 				System.out.println("Encryption option selected");
-				System.out.println("Please enter your text:");
-				msg = console.nextLine();
-				System.out.println("Please enter key in range -2147483648 to 2147483647:");
-				key = Integer.parseInt(console.nextLine());
-				System.out.println("Your MAD result is:");
-				System.out.println(encode(msg, key));
-				reset();
-				System.out.println("Please select option 1 - 3");
+				optionRun();
 				break;
 
 			case ("2"):
 				System.out.println("Decryption option selected");
-				System.out.println("Please enter your text:");
-				String msg = console.nextLine();
-				System.out.println("Please enter key in range -2147483648 to 2147483647:");
-				key = Integer.parseInt(console.nextLine());
-				System.out.println("Your MAD result is:");
-				System.out.println(encode(msg, key));
-				reset();
-				System.out.println("Please select option 1 - 3");
+				optionRun();
 				break;
 
 			case ("3"):
