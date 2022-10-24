@@ -6,6 +6,7 @@ import java.util.List;
 public class Q7InvestingChange {
 	// for every purchase, round up to the next dollar and save the change
 	// Example: 5.27 coffee, invest 0.73
+	// Count average and total investments
 	
 	static double calcAvgChangeInvested(List<Double> purchases) {
 		return purchases.stream().mapToDouble(x -> Math.ceil(x) - x)
