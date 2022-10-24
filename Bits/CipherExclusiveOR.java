@@ -4,6 +4,7 @@ public class CipherExclusiveOR {
 	
 	String msg;
 	String encmsg;
+	String decmsg;
 	int key;
 	
 	String encode(String msg, int key){
@@ -11,6 +12,10 @@ public class CipherExclusiveOR {
 			encmsg += (char)(msg.charAt(i) ^ key);
 		}
 		return encmsg;
+	}
+	
+	String decode(String msg, int key) {
+		return encode(msg, key);
 	}
 
 	public static void main(String[] args) {
