@@ -24,11 +24,15 @@ public class CipherExclusiveOR {
 		CipherExclusiveOR ceo = new CipherExclusiveOR();
 
 		System.out.println("Welcome to Mad Cipher App!");
-		System.out.println("You can use absolutelly any languages");
+		System.out.println("You can use absolutelly any languages.");
 		System.out.println("The Mad cipher is omnivorous!");
 		
 		while(true) {
 			Scanner console = new Scanner(System.in);
+			System.out.println("Please choose your option:");
+			System.out.println("1. Encrypt");
+			System.out.println("2. Decrypt");
+			System.out.println("3. EXIT");
 		}
 
 
