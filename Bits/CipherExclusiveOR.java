@@ -2,9 +2,9 @@ package Bits;
 
 public class CipherExclusiveOR {
 	
-	String msg;
-	String encmsg;
-	String decmsg;
+	static String msg = "Привет! Пук.";
+	static String encmsg = "";
+	static String decmsg = "";
 	int key;
 	
 	String encode(String msg, int key){
@@ -19,7 +19,11 @@ public class CipherExclusiveOR {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		CipherExclusiveOR ceo = new CipherExclusiveOR();
+		System.out.println(ceo.msg);
+		System.out.println(ceo.encode(msg, 123456789));
+		System.out.println(ceo.decode(encmsg, 123456789));
+
 
 	}
 
