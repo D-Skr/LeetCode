@@ -7,26 +7,27 @@ public class CipherExclusiveOr {
     // if you know how to brute force it please let me know!
 
     static String msg = "";
-    static String encmsg = "";
-    static String decmsg = "";
+    static String encMsg = "";
+   // static String decmsg = "";
     static int key;
     static final String errorMsg = "Invalid value, please try again";
 
     static String encode(String msg, int key) {
         for (int i = 0; i < msg.length(); i++) {
-            encmsg += (char) (msg.charAt(i) ^ key);
+            encMsg += (char) (msg.charAt(i) ^ key);
         }
-        return encmsg;
+        return encMsg;
     }
 
+    //decode method works absolutely as encode
     static String decode(String msg, int key) {
         return encode(msg, key);
     }
 
     static void reset() {
         msg = "";
-        encmsg = "";
-        decmsg = "";
+        encMsg = "";
+     //   decmsg = "";
         key = 0;
     }
 
