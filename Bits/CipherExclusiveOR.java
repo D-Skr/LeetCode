@@ -23,12 +23,6 @@ public class CipherExclusiveOr {
         return encode(msg, key);
     }
 
-    static void reset() {
-        msg = "";
-        encMsg = "";
-        //key = 0;
-    }
-
     static void optionRun() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter your text:");
@@ -47,10 +41,10 @@ public class CipherExclusiveOr {
             return;
         }
 
-        System.out.println("Your MAD result is:");
+        System.out.println("\nYour MAD result is:");
         System.out.println(encode(msg, key));
-        reset();
-        System.out.println("Please select option 1 - 3");
+        encMsg = "";
+        System.out.println("\nPlease select option 1 - 3");
     }
 
     public static void main(String[] args) {
@@ -58,10 +52,10 @@ public class CipherExclusiveOr {
         System.out.println("Welcome to MAD Cipher App!");
         System.out.println("You can use absolutelly any languages, numbers and symbols");
         System.out.println("The cipher is omnivorous!");
+        System.out.println("\nPlease choose your option:");
 
         while (true) {
             Scanner console = new Scanner(System.in);
-            System.out.println("Please choose your option:");
             System.out.println("1. Encrypt");
             System.out.println("2. Decrypt");
             System.out.println("3. EXIT");
