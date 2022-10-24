@@ -4,28 +4,34 @@ import java.util.Scanner;
 
 public class CipherExclusiveOR {
 
-	static String msg = "Привет! Пук.";
+	static String msg = "";
 	static String encmsg = "";
 	static String decmsg = "";
-	int key;
+	static int key;
 
-	String encode(String msg, int key) {
+	static String encode(String msg, int key) {
 		for (int i = 0; i < msg.length(); i++) {
 			encmsg += (char) (msg.charAt(i) ^ key);
 		}
 		return encmsg;
 	}
 
-	String decode(String msg, int key) {
+	static String decode(String msg, int key) {
 		return encode(msg, key);
+	}
+	
+	static void reset() {
+		msg = "";
+		encmsg = "";
+		decmsg = "";
+		key = 0;
 	}
 
 	public static void main(String[] args) {
-		CipherExclusiveOR ceo = new CipherExclusiveOR();
 
-		System.out.println("Welcome to Mad Cipher App!");
+		System.out.println("Welcome to MAD Cipher App!");
 		System.out.println("You can use absolutelly any languages.");
-		System.out.println("The Mad cipher is omnivorous!");
+		System.out.println("The cipher is omnivorous!");
 
 		while (true) {
 			Scanner console = new Scanner(System.in);
@@ -39,12 +45,26 @@ public class CipherExclusiveOR {
 			switch (option) {
 			case ("1"):
 				System.out.println("Encryption option selected");
-
+				System.out.println("Please enter your text:");
+				msg = console.nextLine();
+				System.out.println("Please enter key in range -2147483648 to 2147483647:");
+				key = Integer.parseInt(console.nextLine());
+				System.out.println("Your MAD result is:");
+				System.out.println(encode(msg, key));
+				reset();
+				System.out.println("Please select option 1 - 3");
 				break;
 
 			case ("2"):
 				System.out.println("Decryption option selected");
-
+				System.out.println("Please enter your text:");
+				String msg = console.nextLine();
+				System.out.println("Please enter key in range -2147483648 to 2147483647:");
+				key = Integer.parseInt(console.nextLine());
+				System.out.println("Your MAD result is:");
+				System.out.println(encode(msg, key));
+				reset();
+				System.out.println("Please select option 1 - 3");
 				break;
 
 			case ("3"):
