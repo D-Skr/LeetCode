@@ -26,7 +26,6 @@ public class CipherExclusiveOr {
     static void reset() {
         msg = "";
         encMsg = "";
-     //   decmsg = "";
         key = 0;
     }
 
