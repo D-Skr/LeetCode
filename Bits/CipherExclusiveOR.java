@@ -8,6 +8,7 @@ public class CipherExclusiveOr {
 	static String encmsg = "";
 	static String decmsg = "";
 	static int key;
+	static final String errorMsg = "Invalid value, please try again"; 
 
 	static String encode(String msg, int key) {
 		for (int i = 0; i < msg.length(); i++) {
@@ -32,7 +33,18 @@ public class CipherExclusiveOr {
 		System.out.println("Please enter your text:");
 		msg = scanner.nextLine();
 		System.out.println("Please enter key in range -2147483648 to 2147483647:");
-		key = Integer.parseInt(scanner.nextLine());
+		try{
+			double temp = Double.parseDouble(scanner.nextLine());
+			if(temp >= -2147483648 && temp <= 2147483647 ) key = (int)temp;
+			else { 
+				System.out.println(errorMsg);
+				return;
+			}
+		} catch(NumberFormatException e) {
+			System.out.println(errorMsg);
+			return;
+		}
+		
 		System.out.println("Your MAD result is:");
 		System.out.println(encode(msg, key));
 		reset();
@@ -42,7 +54,7 @@ public class CipherExclusiveOr {
 	public static void main(String[] args) {
 
 		System.out.println("Welcome to MAD Cipher App!");
-		System.out.println("You can use absolutelly any languages.");
+		System.out.println("You can use absolutelly any languages, numbers and symbols");
 		System.out.println("The cipher is omnivorous!");
 
 		while (true) {
