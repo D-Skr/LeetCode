@@ -8,7 +8,6 @@ public class CipherExclusiveOr {
 
     static String msg = "";
     static String encMsg = "";
-   // static String decmsg = "";
     static int key;
     static final String errorMsg = "Invalid value, please try again";
 
