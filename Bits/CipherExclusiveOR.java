@@ -51,6 +51,19 @@ public class CipherExclusiveOr {
 
     static boolean isValid(String text) {
         boolean isValid = false;
+        
+        String[] words = text.split(" ");
+        for (String word : words) {
+            if (word.length() > 25)
+                return false;
+        }
+        if (text.contains(". ") 
+                || text.contains(", ") 
+                || text.contains("! ")
+                || text.contains("? ")
+                || text.contains(": ")) {
+            isValid = true;
+        }
         return isValid;
     }
     
