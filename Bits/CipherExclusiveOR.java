@@ -25,7 +25,6 @@ public class CipherExclusiveOr {
     }
 
     static void optionRun() {
-       // Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter your text:");
         msg = scanner.nextLine();
         System.out.println("Please enter key in range -2147483648 to 2147483647:");
@@ -83,8 +82,8 @@ public class CipherExclusiveOr {
 
             case ("4"):
                 System.out.println("It was fun! See you!");
-            scanner.close();
-            return;
+                scanner.close();
+                return;
 
             default:
                 System.out.println("Invalid option, please enter number 1 - 4 only");
