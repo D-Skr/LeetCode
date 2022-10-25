@@ -59,6 +59,7 @@ public class CipherExclusiveOr {
 
             
         }
+        if (!found) System.out.println("\nNo result....");
     }
 
     static boolean isValid(String text) {
