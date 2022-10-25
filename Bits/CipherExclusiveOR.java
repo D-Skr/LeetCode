@@ -42,7 +42,7 @@ public class CipherExclusiveOr {
         System.out.println("\nYour MAD result is:");
         System.out.println(encode(msg, key));
         encMsg = "";
-        System.out.println("\nPlease select option 1 - 3");
+        System.out.println("\nPlease select option 1 - 4");
     }
     
  
