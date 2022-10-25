@@ -45,7 +45,14 @@ public class CipherExclusiveOr {
         System.out.println("\nPlease select option 1 - 4");
     }
     
-    static void bruteForce(String msg) {}
+    static void bruteForce(String msg) {
+        
+    }
+
+    static boolean isValid(String text) {
+        boolean isValid = false;
+        return isValid;
+    }
     
     static void optionBruteForceRun() {
         System.out.println("Please enter your text:");
