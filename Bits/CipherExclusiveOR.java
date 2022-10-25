@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class CipherExclusiveOr {
 
-    // if you know how to brute force it please let me know!
-
     static String msg = "";
     static String encMsg = "";
     static int key;
