@@ -10,6 +10,7 @@ public class CipherExclusiveOr {
     static String encMsg = "";
     static int key;
     static final String errorMsg = "Invalid value, please try again";
+    static Scanner scanner = new Scanner(System.in);
 
     static String encode(String msg, int key) {
         for (int i = 0; i < msg.length(); i++) {
@@ -24,7 +25,7 @@ public class CipherExclusiveOr {
     }
 
     static void optionRun() {
-        Scanner scanner = new Scanner(System.in);
+       // Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter your text:");
         msg = scanner.nextLine();
         System.out.println("Please enter key in range -2147483648 to 2147483647:");
@@ -46,6 +47,8 @@ public class CipherExclusiveOr {
         encMsg = "";
         System.out.println("\nPlease select option 1 - 3");
     }
+    
+ 
 
     public static void main(String[] args) {
 
@@ -55,12 +58,12 @@ public class CipherExclusiveOr {
         System.out.println("\nPlease choose your option:");
 
         while (true) {
-            Scanner console = new Scanner(System.in);
             System.out.println("1. Encrypt");
             System.out.println("2. Decrypt");
-            System.out.println("3. EXIT");
+            System.out.println("3. Brute Force");
+            System.out.println("4. EXIT");
 
-            String option = console.nextLine();
+            String option = scanner.nextLine();
 
             switch (option) {
             case ("1"):
@@ -74,12 +77,17 @@ public class CipherExclusiveOr {
                 break;
 
             case ("3"):
+                System.out.println("Brute Force option selected");
+                optionBruteForceRun();
+                break;
+
+            case ("4"):
                 System.out.println("It was fun! See you!");
-                console.close();
-                return;
+            scanner.close();
+            return;
 
             default:
-                System.out.println("Invalid option, please enter number 1 - 3 only");
+                System.out.println("Invalid option, please enter number 1 - 4 only");
                 break;
             }
         }
