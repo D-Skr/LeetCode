@@ -47,6 +47,18 @@ public class CipherExclusiveOr {
     
     static void bruteForce(String msg) {
         boolean found = false;
+        for (int i = 0; i < 150000; i++) {
+
+            encMsg = encode(msg, i);
+            if (isValid(encMsg)) {
+                System.out.println("\n\nFound key: " + i);
+                System.out.println(encMsg);
+                found = true;
+            }
+            else encMsg = "";
+
+            
+        }
     }
 
     static boolean isValid(String text) {
