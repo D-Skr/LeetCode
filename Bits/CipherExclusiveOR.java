@@ -46,7 +46,7 @@ public class CipherExclusiveOr {
     }
     
     static void bruteForce(String msg) {
-        
+        boolean found = false;
     }
 
     static boolean isValid(String text) {
