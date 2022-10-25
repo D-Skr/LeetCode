@@ -17,7 +17,7 @@ public class CipherExclusiveOr {
         return encMsg;
     }
 
-    //decode method works absolutely as encode
+    // decode method works absolutely as encode
     static String decode(String msg, int key) {
         return encode(msg, key);
     }
@@ -44,7 +44,7 @@ public class CipherExclusiveOr {
         encMsg = "";
         System.out.println("\nPlease select option 1 - 4");
     }
-    
+
     static void bruteForce(String msg) {
         boolean found = false;
         for (int i = 0; i < 150000; i++) {
@@ -54,32 +54,28 @@ public class CipherExclusiveOr {
                 System.out.println("\n\nFound key: " + i);
                 System.out.println(encMsg);
                 found = true;
-            }
-            else encMsg = "";
-
-            
+            } else
+                encMsg = "";
         }
-        if (!found) System.out.println("\nNo result....");
+        if (!found)
+            System.out.println("\nNo result....");
     }
 
     static boolean isValid(String text) {
         boolean isValid = false;
-        
+
         String[] words = text.split(" ");
         for (String word : words) {
             if (word.length() > 25)
                 return false;
         }
-        if (text.contains(". ") 
-                || text.contains(", ") 
-                || text.contains("! ")
-                || text.contains("? ")
+        if (text.contains(". ") || text.contains(", ") || text.contains("! ") || text.contains("? ")
                 || text.contains(": ")) {
             isValid = true;
         }
         return isValid;
     }
-    
+
     static void optionBruteForceRun() {
         System.out.println("Please enter your text:");
         msg = scanner.nextLine();
@@ -87,7 +83,6 @@ public class CipherExclusiveOr {
         encMsg = "";
         System.out.println("\nPlease select option 1 - 4");
     }
- 
 
     public static void main(String[] args) {
 
