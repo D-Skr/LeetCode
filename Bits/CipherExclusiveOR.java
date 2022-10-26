@@ -69,7 +69,10 @@ public class CipherExclusiveOr {
             if (word.length() > 25)
                 return false;
         }
-        if (text.contains(". ") || text.contains(", ") || text.contains("! ") || text.contains("? ")
+        if (text.contains(". ") 
+                || text.contains(", ") 
+                || text.contains("! ") 
+                || text.contains("? ")
                 || text.contains(": ")) {
             isValid = true;
         }
