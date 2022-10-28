@@ -58,7 +58,7 @@ public class CipherExclusiveOr {
                 encMsg = "";
         }
         if (!found)
-            System.out.println("\nNo result....");
+            System.out.println("\nNo results....");
     }
 
     static boolean isValid(String text) {
