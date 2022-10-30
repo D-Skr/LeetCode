@@ -1,7 +1,8 @@
 package Bits;
 
 public class ShowBits {
-
+    // show bits of byte
+    
     public static void main(String[] args) {
         int t;
         byte val;
