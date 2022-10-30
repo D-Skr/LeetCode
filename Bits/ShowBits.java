@@ -2,6 +2,9 @@ package Bits;
 
 public class ShowBits {
     // show bits of byte
+    static void showBits(byte val) {
+        
+    }
     
     public static void main(String[] args) {
         int t;
