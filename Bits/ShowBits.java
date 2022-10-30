@@ -6,6 +6,10 @@ public class ShowBits {
         int t;
         byte val;
 
+        val = 123;
+        for (t = 128; t > 0; t  = t/2) {
+            
+        }
     }
 
 }
