@@ -11,7 +11,7 @@ public class ShowBits {
     }
     
     public static void main(String[] args) {
-        byte val = -128;
+        byte val = -1;
         showBits(val);
     }
 
