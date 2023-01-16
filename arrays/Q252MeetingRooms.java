@@ -21,8 +21,10 @@ public class Q252MeetingRooms {
         return true;
     }
     
-    private void psvm() {
-        // TODO Auto-generated method stub
-
+    public static void main(String[] args) {
+        int[][] intervals1 = {{5,10},{1,4},{3,7}};  //false
+        int[][] intervals2 = {{1,2},{3,4},{0,1}};   //true
+        System.out.println(canAttendMeetings(intervals1));
+        System.out.println(canAttendMeetings(intervals2));
     }
 }
