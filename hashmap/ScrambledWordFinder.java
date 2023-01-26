@@ -8,7 +8,8 @@ import java.util.Map;
  *  characters in the word are all present in the note, and their 
  *  frequency is less or equal to the note's frequency. 
  *  If this is true for a word, that word is returned as the result. 
- *  If no word is found, it returns '-'. */
+ *  If no word is found, it returns '-'. 
+ */
 
 public class ScrambledWordFinder {
 
