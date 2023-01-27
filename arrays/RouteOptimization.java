@@ -3,6 +3,20 @@ package arrays;
 import java.util.ArrayList;
 import java.util.List;
 
+/* This algorithm uses nested loops to iterate through all 
+ * possible pairs of forward and return routes, 
+ * and adds the pair to the optimalPairs list if the total 
+ * distance of the pair does not exceed the maximum operating travel distance.
+ * Note that this algorithm does not optimize the solution 
+ * in terms of minimizing the total operating travel distance. 
+ * It will return all pairs of routes that are valid and whose 
+ * total distance is equal or less than maxTravelDist.
+ * Also, this solution returns a list of pairs of integers 
+ * representing the pairs of IDs of forward and 
+ * return shipping routes that optimally utilize the given aircraft. 
+ * If no route is possible, it will return an empty list.
+ */
+
 public class RouteOptimization {
     public static List<List<Integer>> optimizeRoutes(int maxTravelDist, List<List<Integer>> forwardRouteList, List<List<Integer>> returnRouteList) {
         List<List<Integer>> optimalPairs = new ArrayList<>();
