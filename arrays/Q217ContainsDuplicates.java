@@ -25,8 +25,8 @@ public class Q217ContainsDuplicates {
         }
         
     public static void main(String[] args) {
-       int[] arr1 = {1,2,1,3,4}; //true
-       int[] arr2 = {1,2,5,3,4}; //false
+       int[] arr1 = {1,2,1,3,4};    //true
+       int[] arr2 = {1,2,5,3,4};    //false
        
        System.out.println(containDuplicates(arr1));
        System.out.println(containDuplicates(arr2));
