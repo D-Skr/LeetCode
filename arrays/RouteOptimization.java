@@ -1,6 +1,7 @@
 package arrays;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /* This algorithm uses nested loops to iterate through all 
@@ -40,6 +41,16 @@ public class RouteOptimization {
     }
     
     public static void main(String[] args) {
+        int maxTravelDist = 10000;
+        List<List<Integer>> forwardRouteList = Arrays.asList(Arrays.asList(1, 3000), 
+                Arrays.asList(2, 5000), 
+                Arrays.asList(3, 7000), 
+                Arrays.asList(4, 100001));
+        List<List<Integer>> returnRouteList = Arrays.asList(Arrays.asList(1,2000), 
+                Arrays.asList(2, 3000), 
+                Arrays.asList(3, 4000), 
+                Arrays.asList(4, 5000));
         
+        System.out.println(optimizeRoutes(maxTravelDist, forwardRouteList, returnRouteList));
     }
 }
