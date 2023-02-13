@@ -10,8 +10,14 @@ public class Q217ContainsDuplicates {
     *Output: true
     */
     
-    public static void main(String[] args) {
+        public static boolean containDuplicates(int[] arr) {
+            boolean isDups = true;
+            
+            return isDups;
+        }
         
+    public static void main(String[] args) {
+       
 
     }
 
