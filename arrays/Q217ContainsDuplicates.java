@@ -1,5 +1,9 @@
 package arrays;
 
+import java.util.Arrays;
+import java.util.Set;
+import java.util.stream.Collectors;
+
 public class Q217ContainsDuplicates {
     /*https://leetcode.com/problems/contains-duplicate/submissions/896894890/
     *Given an integer array nums, 
@@ -12,7 +16,11 @@ public class Q217ContainsDuplicates {
     
         public static boolean containDuplicates(int[] arr) {
             boolean isDups = true;
+            Set<Integer> set = Arrays.stream(arr).boxed().collect(Collectors.toSet());
             
+            //set contains only unique element. 
+            //Compare sizes: if array does not contain dups sizes should be equal
+            if(set.size() < arr.length) isDups = true;
             return isDups;
         }
         
