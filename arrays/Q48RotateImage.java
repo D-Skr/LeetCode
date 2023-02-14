@@ -1,5 +1,7 @@
 package arrays;
 
+import java.util.Arrays;
+
 /*
  * You are given an n x n 2D matrix representing an image, 
  * rotate the image by 90 degrees (clockwise).
@@ -28,8 +30,12 @@ public class Q48RotateImage {
         }                    
     }
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
-
+        int[][] matrix = {{1,2,3},{4,5,6},{7,8,9}};
+        System.out.println(Arrays.deepToString(matrix));  //[[1,2,3],[4,5,6],[7,8,9]]
+        
+        //rotate
+        rotate(matrix);
+        System.out.println(Arrays.deepToString(matrix));  //[[7,4,1],[8,5,2],[9,6,3]]
     }
 
 }
