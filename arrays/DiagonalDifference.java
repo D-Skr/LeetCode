@@ -11,7 +11,14 @@ import java.util.List;
 public class DiagonalDifference {
     
     static int diagonalDifference(List<List<Integer>> arr) {
-        return -1;
+        int sum1 = 0;
+        int sum2 = 0;
+        
+        for (int i = 0; i < arr.size(); i++) {
+            sum1 += arr.get(i).get(i);
+            sum2 += arr.get(i).get(arr.size() - 1 - i);
+        }
+        return Math.abs(sum1 - sum2);
     }
 
     public static void main(String[] args) {
