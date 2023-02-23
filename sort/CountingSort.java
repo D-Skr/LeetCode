@@ -1,9 +1,9 @@
 package sort;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class CountingSort {
     
@@ -13,35 +13,16 @@ public class CountingSort {
             return arr;
         }
             int maxValue = Collections.max(arr);
-            //Integer[] count = new Integer[100];
-            int[] count = new int[100];
-            //Integer[] out = new Integer[maxValue+1];
-            List<Integer> result = new ArrayList<>();
-            //Collections.fill(count,0);
-//            for(int i : count){
-//                count[i] = 0;
-//            }
+            int[] count = new int[maxValue + 1];
             for(int i : arr){
                 count[i]++;
-                //result.set(i+1, result.get(i)+1);
-                
-                //System.out.println(countArr[i]);
-                // System.out.print(result.get(i) + " ");
-                // result.set(i, result.get(i)+1);
-                // System.out.println(result.get(i));
             }
-            //System.out.println(Arrays.deepToString(count));
-//            for(int i = 1; i < count.length; i++) {
-//                count[i] += count[i - 1];
-//            }
-//            
-//            for(int i = 1; i <= count.length; i++) {
-//                //result.set(count[arr.get(i)] - 1, i);
-//                out[count[arr.get(i)] -1] = arr.get(i);
-//                count[arr.get(i)]--;
-//            }
+
             
-            //result = Arrays.asList(count);
+            List<Integer> result = Arrays
+                    .stream(count)
+                    .boxed()
+                    .collect(Collectors.toList());
             return result;
         }
 
