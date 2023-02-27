@@ -31,5 +31,4 @@ public class CountingSort {
         List<Integer> list = Arrays.asList(1,1,3,2,1);
         System.out.println(countingSort(list));
     }
-
 }
