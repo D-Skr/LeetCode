@@ -5,7 +5,9 @@ public class MissingNumber {
     
     public void missingNumber(int[] intArray) {
         for(int i = 0; i < intArray.length - 1; i++) {
-            
+            if(intArray[i] + 1 != intArray[i +1]) {
+                System.out.print(intArray[i] + 1);
+            }
         }
     }
     
