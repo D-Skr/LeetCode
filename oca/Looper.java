@@ -16,6 +16,6 @@ public class Looper {
             System.out.print("kk = " + kk + ", ");
             kk = kk + 1;
         }
-        System.out.print("kk = " + kk + ", ");
+        System.out.print("kk = " + kk + ", "); //local var kk invisible outside block.
     }
 }
