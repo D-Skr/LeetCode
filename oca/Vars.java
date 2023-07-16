@@ -9,23 +9,23 @@ package oca;
  */
 
 public class Vars {
-    int z;
+    int x;
     public static void main(String[] args){
         Vars obj = new Vars();
-        int z = 3;
-        System.out.print(z);
+        int x = 3;
+        System.out.print(x);
         obj.doStuff();
-        System.out.print(z);
-        System.out.print(obj.z);
+        System.out.print(x);
+        System.out.print(obj.x);
     }
     
     void doStuff() {
-        int z = 2;
-        doStuff(z);
-        System.out.print(z);
+        int x = 2;
+        doStuff(x);
+        System.out.print(x);
     }
     
-    void doStuff(int zzz) {
-        z = 1;
+    void doStuff(int xxx) {
+        x = 1;
     }
 }
