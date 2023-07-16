@@ -13,7 +13,7 @@ public class String {
 
     public static void main(java.lang.String[] args) {
         String String = new String(new String().String());
-        System.out.println("String");
+        System.out.println("String!");
     }
 
 }
