@@ -48,13 +48,13 @@ public class CourseFinder {
 
     public static void main(String[] args) {
         List<List<String>> enrollments1 = Arrays.asList(
-                Arrays.asList("58", "Linear Algebra"),
-                Arrays.asList("94", "Art History"),
+                Arrays.asList("58", "Algebra"),
+                Arrays.asList("94", "History"),
                 Arrays.asList("94", "Operating Systems"),
                 Arrays.asList("17", "Software Design"),
-                Arrays.asList("58", "Mechanics"),
+                Arrays.asList("58", "Mechanicus"),
                 Arrays.asList("58", "Economics"),
-                Arrays.asList("17", "Linear Algebra"),
+                Arrays.asList("17", "Algebra"),
                 Arrays.asList("17", "Political Science"),
                 Arrays.asList("94", "Economics"),
                 Arrays.asList("25", "Economics"),
@@ -81,7 +81,7 @@ public class CourseFinder {
         List<List<String>> enrollments3 = Arrays.asList(
                 Arrays.asList("23", "Software Design"),
                 Arrays.asList("3", "Advanced Mechanics"),
-                Arrays.asList("2", "Art History"),
+                Arrays.asList("2", "History"),
                 Arrays.asList("33", "Another")
         );
 
