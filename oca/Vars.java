@@ -1,5 +1,13 @@
 package oca;
 
+/*
+ * What is the result?
+ * 3231
+ * 3230
+ * 3131
+ * 3130
+ */
+
 public class Vars {
     int z;
     public static void main(String[] args){
