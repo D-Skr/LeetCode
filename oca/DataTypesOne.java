@@ -1,5 +1,8 @@
 package oca;
 
+/* 
+ * what is the result?
+ */
 public class DataTypesOne {
 
     public static void main(String[] args) {
