@@ -18,7 +18,9 @@ class Test {
     }
         
         public static Engine test1(Engine e) {
-            
+            e.model = "Senior";
+            e.hp = 120;
+            return e;
         }
         
         public static void test2(Engine e) {
