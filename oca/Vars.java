@@ -25,7 +25,7 @@ public class Vars {
         System.out.print(x);
     }
     
-    void doStuff(int xxx) {
+    void doStuff(int xx) {
         x = 1;
     }
 }
