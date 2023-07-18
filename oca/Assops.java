@@ -22,6 +22,9 @@ public class Assops {
         String s = "";
         //s = sobj + 'a'; //invalid
         s = (String)sobj + 'a'; //valid
+        
+        //Empty statement
+        if(1 > 0); //valid
     }
 
 }
