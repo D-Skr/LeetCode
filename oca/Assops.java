@@ -4,6 +4,7 @@ public class Assops {
 
     public static void main(String[] args) {
         String str = "";
+        
         // '+' works only for String. At least one operand should be String type
         System.out.println(str);
         //str = null +'a'; //invalid
