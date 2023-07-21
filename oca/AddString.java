@@ -12,6 +12,10 @@ public class AddString {
          * 1 + 2 = 34
          * 1 + 2 = 7
          */
+        
+        System.out.println(1 + 2 + 3 + "!"); //6!
+        System.out.println(1 + 2 * 3 + "!"); //7!
+        System.out.println("!" + 1 + 2 * 3 + "!"); //!16! because '*' has higher priority then '+'
     }
 
 }
