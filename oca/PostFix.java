@@ -29,6 +29,9 @@ public class PostFix {
         
         System.out.println(a + a++ - a-- + " " + a); //-1 0
         
+        System.out.println("" + 10 + 5 == 4 + 11 + ""); //false
+        System.out.println("" + 10 + (5 == 4) + 11); //10false11
+        
     }
 
 }
