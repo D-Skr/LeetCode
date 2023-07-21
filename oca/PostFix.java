@@ -3,7 +3,7 @@ package oca;
 public class PostFix {
 
     static int incr1(int x) {
-        return x++;
+        return x++; //local variable, return same x.
     }
     
     static int incr2(int x) {
