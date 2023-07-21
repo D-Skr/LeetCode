@@ -16,6 +16,7 @@ public class AddString {
         System.out.println(1 + 2 + 3 + "!"); //6!
         System.out.println(1 + 2 * 3 + "!"); //7!
         System.out.println("!" + 1 + 2 * 3 + "!"); //!16! because '*' has higher priority then '+'
+    //  System.out.println("!" + 1 + 2 - 3 + "!"); //comp error
     }
 
 }
