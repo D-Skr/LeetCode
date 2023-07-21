@@ -19,7 +19,7 @@ public class PostFix {
         System.out.println(incr1(b));
         System.out.println(incr2(c));
 
-        System.out.println(incr1(b));
+        System.out.println(incr1(b)); //return 0
         System.out.println(incr1(b));
         System.out.println(incr1(b));
     }
