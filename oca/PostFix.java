@@ -32,6 +32,16 @@ public class PostFix {
         System.out.println("" + 10 + 5 == 4 + 11 + ""); //false
         System.out.println("" + 10 + (5 == 4) + 11); //10false11
         
+        a = Integer.MAX_VALUE;
+        b = Integer.MIN_VALUE;
+        System.out.println("a = " + a + ", b = " + b);
+        
+        a = a + b;
+        b = a - b;
+        a = a - b;
+
+        System.out.println("a = " + a + ", b = " + b);
+        
     }
 
 }
