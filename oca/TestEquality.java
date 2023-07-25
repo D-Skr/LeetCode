@@ -17,6 +17,12 @@ public class TestEquality {
         System.out.println(sb1 == sb2);     //false
         System.out.println(sb1.equals(sb2));  //false
         System.out.println(sb1.toString().equals(sb2.toString()));  //true
+        
+        TestEquality te1 = new TestEquality();
+        TestEquality te2 = new TestEquality();
+        
+        System.out.println(te1 == te2);
+        System.out.println(te1.equals(te2));
     }
 
 }
