@@ -39,6 +39,7 @@ public class TestEquality {
         Object strr = new String("false");
         System.out.println(boo == strr); //prints false
         
+        System.out.println(null == null); //true
     }
   
 }
