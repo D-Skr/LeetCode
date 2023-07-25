@@ -11,6 +11,10 @@ public class TestEquality {
         System.out.println(str1 == str3);   //false
         System.out.println(str1.equals(str2));  //true
         System.out.println(str1.equals(str3));  //true
+        
+        StringBuilder sb1 = new StringBuilder("Hello");
+        StringBuilder sb2 = new StringBuilder("Hello");
+        System.out.println(sb1 == sb2); //false
     }
 
 }
