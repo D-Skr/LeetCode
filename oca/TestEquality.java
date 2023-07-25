@@ -16,6 +16,7 @@ public class TestEquality {
         StringBuilder sb2 = new StringBuilder("Hello");
         System.out.println(sb1 == sb2);     //false
         System.out.println(sb1.equals(sb2));  //false
+        System.out.println(sb1.toString().equals(sb2.toString()));  //true
     }
 
 }
