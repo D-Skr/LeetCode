@@ -18,6 +18,8 @@ public class TestEquality {
         System.out.println(sb1.equals(sb2));  //false
         System.out.println(sb1.toString().equals(sb2.toString()));  //true
         System.out.println(sb1.toString().equals(str1));  //true
+        //System.out.println(sb1 == str1);  //comp error
+        System.out.println(sb1.equals(str1)); //false
         
         TestEquality te1 = new TestEquality();
         TestEquality te2 = new TestEquality();
