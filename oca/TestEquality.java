@@ -8,7 +8,9 @@ public class TestEquality {
         String str3 = new String("Hello");
         
         System.out.println(str1 == str2);   //true
+        System.out.println(str1.toString() == str2.toString());   //true
         System.out.println(str1 == str3);   //false
+        System.out.println(str1.toString() == str3.toString());   //false
         System.out.println(str1.equals(str2));  //true
         System.out.println(str1.equals(str3));  //true
         
