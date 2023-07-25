@@ -40,6 +40,7 @@ public class TestEquality {
         System.out.println(boo == strr); //prints false
         
         System.out.println(null == null); //true
+        //System.out.println(null.equals(null)); //comp error
     }
   
 }
