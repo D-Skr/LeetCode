@@ -24,6 +24,15 @@ public class TestEquality {
         
         System.out.println(te1 == te2); //false
         System.out.println(te1.equals(te2)); //false because Super.equals()
+        
+        Boolean boo = new Boolean("false");
+        String str = new String("false");
+        
+        //System.out.println(boo == str); //comp error
+        Object[] array = {boo, str};
+        System.out.println(array[0] == array[1]); // prints false
+        
+        
     }
   
 }
