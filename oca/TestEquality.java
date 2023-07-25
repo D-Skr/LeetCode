@@ -35,6 +35,7 @@ public class TestEquality {
         System.out.println(array[0] == array[1]); // prints false, no errors.
         
         //cast to Object v2. Compiler always looks at reftypes and never cares about actypes
+        //only JVM sees the actypes
         Object booo = new Boolean("false");
         Object strr = new String("false");
         System.out.println(boo == strr); //prints false
