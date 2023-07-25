@@ -22,7 +22,7 @@ public class TestEquality {
         TestEquality te2 = new TestEquality();
         
         System.out.println(te1 == te2);
-        System.out.println(te1.equals(te2));
+        System.out.println(te1.equals(te2)); //false because Super.equals()
     }
 
 }
