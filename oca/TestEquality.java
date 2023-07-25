@@ -29,9 +29,15 @@ public class TestEquality {
         String str = new String("false");
         
         //System.out.println(boo == str); //comp error
+
+        //cast to Object v1
         Object[] array = {boo, str};
-        System.out.println(array[0] == array[1]); // prints false
+        System.out.println(array[0] == array[1]); // prints false, no errors.
         
+        //cast to Object v2
+        Object booo = new Boolean("false");
+        Object strr = new String("false");
+        System.out.println(boo == strr); //prints false
         
     }
   
