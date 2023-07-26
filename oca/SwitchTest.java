@@ -37,16 +37,24 @@ public class SwitchTest {
         int i11 = 10;
         final int i22 = 20;
         switch(i11) {        
-        case i22:        //works fine because it is constant
-            System.out.println("!");
+            case i22:        //works fine because it is constant
+                System.out.println("!");
         }
         
-        //v5
+        //v5 wrappers do not work with switch
         Integer i3 = new Integer(10);
         final Integer i4 = new Integer(20); //Switch requires unboxing which happens in runtime
         switch(i3) {        
-//        case i4:        //Comp error. Switch requires primitive for constant during compilation, not runtime
+//          case i4:        //Comp error. Switch requires primitive for constant during compilation, not runtime
 //            System.out.println("!");
+        
+        //no identical case values are allowed
+            case 100:
+                System.out.println("!!");
+//            case 1_0_0:     //100. Comp error, Duplicate case
+//                System.out.println("!!");
+//            case 90+10:     //100. Comp error, Duplicate case
+//                System.out.println("!!");
         }
     }
 
