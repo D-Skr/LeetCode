@@ -61,10 +61,16 @@ public class SwitchTest {
         switch(a) {}
         
         //v7 TCF is one operator, can be used without {} in do-while
-        do
-            try {}
-            catch (NullPointerException npe){}
-            finally {}
+//        do      //compiles just fine
+//            try {}
+//            catch (NullPointerException npe){}
+//            finally {}
+//        while(true);
+        
+        //v8 others are not one operator, cannot be used without {} in do-while
+        do 
+            System.out.println("");
+            // System.out.println("2"); //Comp error. Syntax error, insert "while ( Expression ) ;" to complete DoStatement
         while(true);
     }
 
