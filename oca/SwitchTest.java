@@ -29,7 +29,15 @@ public class SwitchTest {
         int i1 = 10;
         int i2 = 20;
         switch(i1) {        
-        case i2:        //Comp err. Case expressions must be a constant expressions
+//        case i2:        //Comp err. Case expressions must be a constant expressions
+//            System.out.println("!");
+        }
+        
+        //v4
+        int i11 = 10;
+        final int i22 = 20;
+        switch(i11) {        
+        case i22:        //works fine because it is constant
             System.out.println("!");
         }
     }
