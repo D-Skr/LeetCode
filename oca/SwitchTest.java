@@ -56,6 +56,10 @@ public class SwitchTest {
 //            case 90+10:     //100. Comp error, Duplicate case
 //                System.out.println("!!");
         }
+        
+        //v6 valid switch with empty body.
+        switch(a) {}
+        
     }
 
 }
