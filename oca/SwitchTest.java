@@ -9,7 +9,11 @@ public class SwitchTest {
         switch(a) {
         case 10:
             System.out.println("!");
+//        case a: //Comp err. Case expressions must be a constant expressions 
+//            System.out.println("!");
         }
+        
+        char ch = 'a';
 
     }
 
