@@ -40,6 +40,14 @@ public class SwitchTest {
         case i22:        //works fine because it is constant
             System.out.println("!");
         }
+        
+        //v5
+        Integer i3 = new Integer(10);
+        final Integer i4 = new Integer(20); //Switch requires unboxing which happens in runtime
+        switch(i3) {        
+//        case i4:        //Comp error. Switch requires primitive for constant
+//            System.out.println("!");
+        }
     }
 
 }
