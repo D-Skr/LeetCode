@@ -14,7 +14,10 @@ public class SwitchTest {
         }
         
         char ch = 'a';
-
+        switch(ch) {        //works fine
+        case 10:
+            System.out.println("!");
+        }
     }
 
 }
