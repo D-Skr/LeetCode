@@ -24,6 +24,14 @@ public class IfElse {
         final boolean bf = false;
         //while(bf) System.out.println("comp error - unreachable code");
         if(bf) System.out.println("comp error - unreachable code");
+       
+        /*invalid. Neither if nor else branch accepts a variable declaration
+         * 
+        if(1>0)
+            String s1 = "1 > 0";
+        else 
+            String s2 = "?!";
+            */
     }
 
 }
