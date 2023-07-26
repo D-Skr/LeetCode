@@ -60,6 +60,12 @@ public class SwitchTest {
         //v6 valid switch with empty body.
         switch(a) {}
         
+        //v7 TCF is one operator, can be used without {} in do-while
+        do
+            try {}
+            catch (NullPointerException npe){}
+            finally {}
+        while(true);
     }
 
 }
