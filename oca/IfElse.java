@@ -19,6 +19,8 @@ public class IfElse {
         //while(!true) System.out.println("comp error - unreachable code");
         b = false;
         while(b) System.out.println("works fine");
+        final boolean bf = false;
+        //while(bf) System.out.println("comp error - unreachable code");
     }
 
 }
