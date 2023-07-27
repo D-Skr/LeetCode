@@ -8,6 +8,7 @@ public class ArrayTest {
         int arr4[] = new int[3]; //arr with size 3
         //int[] arr5[] = new int[3]; //Comperr. Type mismatch: cannot convert from int[] to int[][]
         int[] arr5[] = new int[3][]; //2-dim arr with size 3 of first dimension
+        System.out.println(arr5); //[[I@2a139a55
         
         //compiler counts size
         int[] arr2 = new int[] {42,43,-3223};
