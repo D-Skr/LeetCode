@@ -42,6 +42,7 @@ public class SwitchTest {
         }
         
         //v5 wrappers do not work with switch
+        //case expression - only final primitive
         Integer i3 = new Integer(10);
         final Integer i4 = new Integer(20); //Switch requires unboxing which happens in runtime
         switch(i3) {        
