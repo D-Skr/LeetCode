@@ -58,17 +58,24 @@ public class SwitchTest {
 //                System.out.println("!!");
         }
         
-        //v6 valid switch with empty body.
+        //v6 case expression - only final primitive
+        Integer i5 = 10;
+        switch(i5) {        
+          case 10:        //works
+            System.out.println("!");
+        }
+        
+        //v7 valid switch with empty body.
         switch(a) {}
         
-        //v7 TCF is one operator, can be used without {} in do-while
+        //v8 TCF is one operator, can be used without {} in do-while
 //        do      //compiles just fine
 //            try {}
 //            catch (NullPointerException npe){}
 //            finally {}
 //        while(true);
         
-        //v8 others are not one operator, cannot be used without {} in do-while
+        //v9 others are not one operator, cannot be used without {} in do-while
         do 
             System.out.println("");
             // System.out.println("2"); //Comp error. Syntax error, insert "while ( Expression ) ;" to complete DoStatement
