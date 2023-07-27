@@ -1,9 +1,11 @@
 package oca;
 
 public class ArrayTest {
-
+    static int[] arrr;
+    
     public static void main(String[] args) {
-
+        System.out.println(arrr);   //prints null
+        
         int[] arr = new int[3]; //arr with size 3
         int arr4[] = new int[3]; //arr with size 3
         //int[] arr5[] = new int[3]; //Comperr. Type mismatch: cannot convert from int[] to int[][]
