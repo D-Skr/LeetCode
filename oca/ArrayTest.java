@@ -9,6 +9,8 @@ public class ArrayTest {
         System.out.println(arrr2);   //prints [I@2a139a55
         
         int[] arr = new int[3]; //arr with size 3
+        // int[1] arr0; //comperr. Syntax error on token "1", delete this token
+        
         int arr4[] = new int[3]; //arr with size 3
         //int[] arr5[] = new int[3]; //Comperr. Type mismatch: cannot convert from int[] to int[][]
         int[] arr5[] = new int[3][]; //2-dim arr with size 3 of first dimension
