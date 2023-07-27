@@ -1,10 +1,12 @@
 package oca;
 
 public class ArrayTest {
-    static int[] arrr;
+    static int[] arrr1;
+    static int[] arrr2 = {};
     
     public static void main(String[] args) {
-        System.out.println(arrr);   //prints null
+        System.out.println(arrr1);   //prints null
+        System.out.println(arrr2);   //prints [I@2a139a55
         
         int[] arr = new int[3]; //arr with size 3
         int arr4[] = new int[3]; //arr with size 3
