@@ -12,6 +12,7 @@ public class ArrayTest {
         // int[1] arr0; //comperr. Syntax error on token "1", delete this token
         
         int arr4[] = new int[3]; //arr with size 3
+        System.out.println("arr4[1]: " + arr4[1]); //prints default value 0
         //int[] arr5[] = new int[3]; //Comperr. Type mismatch: cannot convert from int[] to int[][]
         int[] arr5[] = new int[3][]; //2-dim arr with size 3 of first dimension
         System.out.println(arr5); //[[I@2a139a55
@@ -27,6 +28,9 @@ public class ArrayTest {
         //[I - 1-dimensional int array,
         //2a139a55 - hash
         // if [[I - 2 dimensional int array
+        
+        Integer[] arrInt = new Integer[5];
+        System.out.println("arrInt[3]: " + arrInt[3] );
     }
     /*
      * 9 types in class descriptor:
