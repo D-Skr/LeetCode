@@ -30,7 +30,7 @@ public class ArrayTest {
         // if [[I - 2 dimensional int array
         
         Integer[] arrInt = new Integer[5];
-        System.out.println("arrInt[3]: " + arrInt[3] );
+        System.out.println("arrInt[3]: " + arrInt[3] ); //prints null. No NPE
     }
     /*
      * 9 types in class descriptor:
