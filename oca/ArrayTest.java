@@ -31,6 +31,11 @@ public class ArrayTest {
         
         Integer[] arrInt = new Integer[5];
         System.out.println("arrInt[3]: " + arrInt[3] ); //prints null. No NPE
+        
+        int[] a = {1}; // valid
+        int[] b;
+        //b = {1}; //invalid; must read b = new int[]{1}
+        //comperr: Array constants can only be used in initializers
     }
     /*
      * 9 types in class descriptor:
