@@ -43,6 +43,13 @@ public class ArrayTest {
        // System.out.println(arr6[0][0]);  //AIOOBE
         arr6 = new int[5][1];
         System.out.println(arr6[0][0]);  //prints 0
+        
+        int[][][] arr7 = new int[3][][]; //valid
+        int[][][] arr8 = new int[3][2][]; //valid
+        //int[][][] arr9 = new int[][][]; //invalid. Comperr: Variable must provide either dimension expressions or an array initializer.
+        //Cannot specify an array dimension after an empty dimension
+        //int[][][] arr10 = new int[][1][]; //invalid
+        
     }
     /*
      * 9 types in class descriptor:
