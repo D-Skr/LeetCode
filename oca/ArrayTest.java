@@ -49,9 +49,10 @@ public class ArrayTest {
         //int[][][] arr9 = new int[][][]; //invalid. Comperr: Variable must provide either dimension expressions or an array initializer.
         //Cannot specify an array dimension after an empty dimension
         //int[][][] arr10 = new int[][1][]; //invalid
+        
         int[][] arr11 = null;
         System.out.println("arr11: " + arr11); //prints null
-        arr11[0] = new int[2]; //NPE
+        //arr11[0] = new int[2]; //NPE
         
     }
     /*
