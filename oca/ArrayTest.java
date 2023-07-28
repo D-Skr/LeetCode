@@ -38,7 +38,11 @@ public class ArrayTest {
         //comperr: Array constants can only be used in initializers
         
         int[][] arr6 = new int[5][];
-        System.out.println(arr6[0][0]);  //NPE
+        //System.out.println(arr6[0][0]);  //NPE
+        arr6 = new int[5][0];
+       // System.out.println(arr6[0][0]);  //AIOOBE
+        arr6 = new int[5][1];
+        System.out.println(arr6[0][0]);  //prints 0
     }
     /*
      * 9 types in class descriptor:
