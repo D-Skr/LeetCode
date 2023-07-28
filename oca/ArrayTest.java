@@ -36,6 +36,9 @@ public class ArrayTest {
         int[] b;
         //b = {1}; //invalid; must read b = new int[]{1}
         //comperr: Array constants can only be used in initializers
+        
+        int[][] arr6 = new int[5][];
+        System.out.println(arr6[0][0]);  //NPE
     }
     /*
      * 9 types in class descriptor:
