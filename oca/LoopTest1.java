@@ -32,7 +32,8 @@ public class LoopTest1 {
         int i6 = 0, s6 = 0;
         for (;;) { s6 += i6++; if (i6 > count) break; }
 
-        
+        // while(int a =5) {} //Comperr. Syntax error on token "int", delete this token
+        //a cannot be resolved to a variable
     }
 
 }
