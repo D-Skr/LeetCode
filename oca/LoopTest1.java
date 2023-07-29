@@ -7,6 +7,10 @@ public class LoopTest1 {
         for(;;)break; 
         for(;true;) break;
         
+        //endless loop
+        //for(;;); //Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+        //Unreachable code
+        
         //same loop in different valid 
         int count = 10;
         //v1
