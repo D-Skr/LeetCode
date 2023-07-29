@@ -20,13 +20,13 @@ public class LoopTest1 {
         for (int i3 = 0; i3 < count; s3 += i3++);
         //v4
         int i4 = 0, s4 = 0;
-        for (i1 = 0, s1 = 0; i1 < count; i1++) { s1 += i1; }
+        for (; i4 < count; s4 += i4 ) { i4++; }
         //v5
-        int i1, s1;
-        for (i1 = 0, s1 = 0; i1 < count; i1++) { s1 += i1; }
+        int i5 = 0, s5 = 0;
+        for (; i5 < count;) { s5 += i5; i5++; }
         //v6
-        int i1, s1;
-        for (i1 = 0, s1 = 0; i1 < count; i1++) { s1 += i1; }
+        int i6 = 0, s6 = 0;
+        for (;;) { s6 += i6++; if (i6 > count) break; }
 
         
     }
