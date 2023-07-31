@@ -10,6 +10,12 @@ public class LoopTest2 {
                System.out.printf("i=%d, j=%d\n", i, j);
             }
         }
+        /*
+         * prints
+         * i=0, j=0
+         * i=1, j=0
+         * i=2, j=0
+         */
 
     }
 
