@@ -40,5 +40,12 @@ public class LoopTest2 {
                System.out.printf("i=%d, j=%d\n", i, j); //prints same
             }
         }
+        
+        label: for(int i = 0; i < 3; i++) {
+             for (int j = 0; j < 3; j++) {
+                if( j == 1) continue label; //same output as if( j == 1) break;
+                System.out.printf("i=%d, j=%d\n", i, j); 
+             }
+         }
     }
 }
