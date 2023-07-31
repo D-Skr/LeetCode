@@ -23,10 +23,7 @@ public class LoopTest2 {
                System.out.printf("i=%d, j=%d\n", i, j);
             }
             /*
-             * prints 
-             * i=0, j=0
-             * i=1, j=0
-             * i=2, j=0
+             * prints
              * i=0, j=0
              * i=0, j=2
              * i=1, j=0
@@ -35,6 +32,13 @@ public class LoopTest2 {
              * i=2, j=2
              */
         }
+    
+        
+        for(int i = 0; i < 3; i++) {
+           label: for (int j = 0; j < 3; j++) {
+               if( j == 1) continue label;
+               System.out.printf("i=%d, j=%d\n", i, j); //prints same
+            }
+        }
     }
-
 }
