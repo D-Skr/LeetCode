@@ -68,6 +68,15 @@ public class LoopTest3 {
         for ( ; i --> 0; ) //valid. same as 'i-- >0'
             a++;
         System.out.println("a = " + a); //prints 7
+        
+        //v7
+        boolean b1,b2;
+        int a3 = 0;
+        while (b1=b2=false) {} //valid, not a constant in compilation.
+       // while (false) {} //invalid, constant in compilation, comperr
+        while (!!true) {break; }
+        while (a3 == 0 ? false :true) {}
+        while (new LoopTest3().equals("?!")) {}
     }
 
 }
