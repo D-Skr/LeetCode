@@ -49,6 +49,18 @@ public class LoopTest3 {
                 System.out.print("3");
                 if (false) break label; System.out.println("4");
             }
+        
+        //v5
+        int[] arr = {1,2,3};
+        for(int e: arr) {} //valid
+        for(int i =0; i < 0; i++) {} //valid
+        for(;;) break; //valid 
+        for(boolean b = true; b; b = !b) {} //valid!
+        //for(int i; i < 0; i++) {} //invalid. Comperr
+        /*
+         * Exception in thread "main" java.lang.Error: Unresolved compilation problems: 
+         * The local variable i may not have been initialized
+         */
     }
 
 }
