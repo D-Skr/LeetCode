@@ -19,15 +19,23 @@ public class LoopTest3 {
          * at oca.LoopTest3.main(LoopTest3.java:13)
          */
 
+        //v1
         if(false) //valid
             System.out.println("!");
         
+        //v2
         while(false) //invalid, comperr
             System.out.println("!"); 
         /*
          * Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
          * Unreachable code
          */
+        
+        //v3
+        do {
+            System.out.println("!");             
+        }
+        while(false); //valid
     }
 
 }
