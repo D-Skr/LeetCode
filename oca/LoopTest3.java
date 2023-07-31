@@ -61,6 +61,13 @@ public class LoopTest3 {
          * Exception in thread "main" java.lang.Error: Unresolved compilation problems: 
          * The local variable i may not have been initialized
          */
+        
+        //v6
+        int a = 0;
+        int i = 7;
+        for ( ; i --> 0; ) //valid. same as 'i-- >0'
+            a++;
+        System.out.println("a = " + a); //prints 7
     }
 
 }
