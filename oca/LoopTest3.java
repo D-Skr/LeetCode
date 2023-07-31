@@ -10,8 +10,8 @@ public class LoopTest3 {
         List<Integer> list = new ArrayList<>();
         list.add(1);
         
-        for(Integer e : list)
-            list.add(2); //runtime error: iteration+modification restricted
+//        for(Integer e : list)
+//            list.add(2); //runtime error: iteration+modification restricted
         /*
          * Exception in thread "main" java.util.ConcurrentModificationException
          * at java.util.ArrayList$Itr.checkForComodification(ArrayList.java:909)
@@ -24,8 +24,8 @@ public class LoopTest3 {
             System.out.println("!");
         
         //v2
-        while(false) //invalid, comperr
-            System.out.println("!"); 
+        //while(false) //invalid
+        //    System.out.println("!"); //comperr
         /*
          * Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
          * Unreachable code
@@ -36,6 +36,19 @@ public class LoopTest3 {
             System.out.println("!");             
         }
         while(false); //valid
+        
+        
+        //v4 prints 1234
+        label: {
+            System.out.print("1");
+            if (false) break label; 
+            System.out.print("2");
+        }
+        label: 
+            if (1 > 0) {
+                System.out.print("3");
+                if (false) break label; System.out.println("4");
+            }
     }
 
 }
