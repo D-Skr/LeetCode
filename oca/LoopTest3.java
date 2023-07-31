@@ -11,7 +11,7 @@ public class LoopTest3 {
         list.add(1);
         
         for(Integer e : list)
-            list.add(2); //runtime error
+            list.add(2); //runtime error: iteration+modification restricted
         /*
          * Exception in thread "main" java.util.ConcurrentModificationException
          * at java.util.ArrayList$Itr.checkForComodification(ArrayList.java:909)
