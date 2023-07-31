@@ -34,6 +34,13 @@ public class LoopTest1 {
 
         // while(int a =5) {} //Comperr. Syntax error on token "int", delete this token
         //a cannot be resolved to a variable
+        
+        int b =5;
+        do {
+            System.out.println(b);
+            b++;
+        }
+        while(b<20);
     }
 
 }
