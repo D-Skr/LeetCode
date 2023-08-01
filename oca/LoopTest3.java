@@ -73,7 +73,7 @@ public class LoopTest3 {
         boolean b1,b2;
         int a3 = 0;
         while (b1=b2=false) {} //valid, not a constant in compilation.
-       // while (false) {} //invalid, constant in compilation, comperr
+     // while (false) {} //invalid, constant in compilation, comperr
         while (!!true) {break; }
         while (a3 == 0 ? false :true) {}
         while (new LoopTest3().equals("?!")) {}
