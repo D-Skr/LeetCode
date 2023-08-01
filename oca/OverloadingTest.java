@@ -15,7 +15,8 @@ public class OverloadingTest {
     }
     
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
+
+        run(10); //prints long
 
     }
 
