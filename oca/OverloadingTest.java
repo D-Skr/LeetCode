@@ -10,6 +10,9 @@ public class OverloadingTest {
         System.out.println("long");
     }
     
+    static void run(Integer arg) {
+        System.out.println("Integer");
+    }
     
     public static void main(String[] args) {
         // TODO Auto-generated method stub
