@@ -10,3 +10,8 @@ class Staticity {
     }
 
 }
+
+class Hacker extends Staticity {
+    //if execute Hacker class
+    //it prints "A big secret!"
+}
