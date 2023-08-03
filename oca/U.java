@@ -11,7 +11,7 @@ public class U { //should be same as file name because of public modifier
 
     //constructors
     //U(); //comperr
-    void U() {} //just a method, not a constructor
+    void U() {} //just a method, not a constructor. Constructor has no return type
     //abstact U() {} //comperr. Constructor cannot be abstract
     //protected U() {} //valid
     //private U() {} //valid, no errors but useless. Constructor should be public
