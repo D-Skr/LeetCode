@@ -8,7 +8,9 @@ class Staticity {
         System.out.println(secret);
         
         Inter1.run2();
-        //Inter2.run2(); //Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+        
+        //Inter2.run2(); //comperr
+        //Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
         //The method run2() is undefined for the type Inter2
     }
 
