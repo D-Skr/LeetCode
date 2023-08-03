@@ -17,7 +17,9 @@ class Staticity {
         //Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
         //The method run2() is undefined for the type Inter2
         
-
+        Staticity s = new Staticity();
+        s = null;
+        s.test(); //prints hi! no NPE because of static
        
     }
 
