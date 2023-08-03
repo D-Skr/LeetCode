@@ -9,7 +9,7 @@ public class StaticTest1 {
         st.a++;
         StaticTest1.a++;
         st.a--;
-        
+        System.out.println(--st.a + " " + StaticTest1.a); //prints 42 42
     }
 
 }
