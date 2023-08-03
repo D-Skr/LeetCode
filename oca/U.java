@@ -2,7 +2,10 @@ package oca;
 
     //which LOCs fail compilation?
 
-public class U {
 
-}
-
+abstract class A {}
+final class F {}
+public class U {}
+protected class O {}
+private class R {}
+static class S {}
