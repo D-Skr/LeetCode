@@ -2,6 +2,10 @@ package oca;
 
 class Staticity {
     private final static String secret = "A big secret!";
+    
+    static void test() {
+        System.out.println("hi!");
+    }
             
     public static void main(String[] args) {
         
@@ -12,6 +16,9 @@ class Staticity {
         //Inter2.run2(); //comperr
         //Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
         //The method run2() is undefined for the type Inter2
+        
+
+       
     }
 
 }
