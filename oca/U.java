@@ -13,8 +13,9 @@ public class U { //should be same as file name because of public modifier
     //U(); //comperr
     void U() {} //just a method, not a constructor
     //abstact U() {} //comperr. Constructor cannot be abstract
-    protected U() {} //valid
+    //protected U() {} //valid
     //private U() {} //valid, no errors but useless. Constructor should be public
+    U() {}
 }
     
 class N {}
