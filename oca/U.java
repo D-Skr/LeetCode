@@ -19,7 +19,9 @@ public class U { //should be same as file name because of public modifier
     //public U() {} //valid constructor
 }
     
-class N {}
+class N {
+    public N() {}   //valid but useless. Class N is invisible outside package, constructor too
+}
 
 //compelation error: illegal modifier for class
 //protected class O {}
