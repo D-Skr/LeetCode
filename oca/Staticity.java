@@ -20,7 +20,7 @@ class Staticity {
         Staticity s = new Staticity();
         s = null;
         s.test(); //prints hi! no NPE because of static
-       
+        test(); //same result, prints hi!
     }
 
 }
