@@ -10,7 +10,7 @@ final class F {
     int i ='5';
     Double [] arr = new Double[2];
     //double [] arr2 = new int[2]; //comperr
-    StringBuilder sb = new StringBuilder();
+    StringBuilder sb = new StringBuilder(100);
     //sb.append(null); //comperr 
     }
 public class U { //should be same as file name because of public modifier
