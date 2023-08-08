@@ -6,7 +6,8 @@ package oca;
 abstract class A {}
 final class F {
     static class S {} //static modifier is permitted for nested (not top level) class
-    }
+    
+    int i ='5';}
 public class U { //should be same as file name because of public modifier
 
     //constructors
