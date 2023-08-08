@@ -7,7 +7,10 @@ abstract class A {}
 final class F {
     static class S {} //static modifier is permitted for nested (not top level) class
     
-    int i ='5';}
+    int i ='5';
+    Double [] arr = new Double[2];
+    //double [] arr2 = new int[2]; //comperr
+    }
 public class U { //should be same as file name because of public modifier
 
     //constructors
