@@ -19,3 +19,6 @@ class Oak extends Tree {
         System.out.println("Oak is growing");
     }
 }
+
+
+//prints Tree is growing because private method is not polymorphic.  
