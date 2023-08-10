@@ -7,6 +7,9 @@ public class SbTest {
         System.out.println(sb.length() + " : " + sb.toString().length());
         System.out.println(sb.toString());
         //prints 0 : 0
+        StringBuilder sb2 = new StringBuilder();
+//        System.out.println(sb2.append(null)); //comperr
+        
     }
 
 }
