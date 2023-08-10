@@ -1,13 +1,15 @@
 package oca;
 
+// what will print? 
+
 public class Tree {
     private void grow() {
         System.out.println("Tree is growing");        
     }
     
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
-
+        Tree tree = new Oak();
+        tree.grow();
     }
 
 }
