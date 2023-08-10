@@ -6,7 +6,7 @@ public class SbTest {
         StringBuilder sb = new StringBuilder(100);
         System.out.println(sb.length() + " : " + sb.toString().length());
         System.out.println(sb.toString());
-        
+        //prints 0 : 0
     }
 
 }
