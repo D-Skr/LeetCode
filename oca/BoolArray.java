@@ -8,6 +8,10 @@ public class BoolArray {
         barr[1]= new Boolean("True");
         barr[2]= new Boolean(false);
         System.out.println(barr[0] + " " + barr[1] + " " + barr[2]);
+        
+        String s1 = " ";
+        boolean b1 = s1.isEmpty();
+        System.out.println(b1);
 
     }
 
