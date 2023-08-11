@@ -1,7 +1,7 @@
 package oca;
 
 interface Money {
-    int cash = 0;
+    int cash = 0; //implicit static final, not overriden. 
     abstract void earn(int amount);
     public void spend(int amount);
 }
@@ -23,7 +23,7 @@ public class JavaCoder {
         m.earn(5000);
         m.spend(200);
         System.out.println("left in the pocket " + m.cash);
-
+        //prints 0
     }
 
 }
