@@ -22,7 +22,7 @@ public class JavaCoder {
         Money m = new LocalCurrency();
         m.earn(5000);
         m.spend(200);
-        System.out.println();
+        System.out.println("left in the pocket " + m.cash);
 
     }
 
