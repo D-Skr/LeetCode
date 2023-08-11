@@ -11,7 +11,9 @@ class LocalCurrency implements Money{
     public void earn(int amount) {
         cash = cash + amount;
     }
-    
+    public void spend(int amount) {
+        cash = cash - amount;
+    }
 }
 
 public class JavaCoder {
