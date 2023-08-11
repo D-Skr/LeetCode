@@ -20,14 +20,17 @@ public class JavaCoder {
 
     public static void main(String[] args) {
         //v1
-        Money m = new LocalCurrency();
-        m.earn(5000);
-        m.spend(200);
-        System.out.println("left in the pocket " + m.cash);
+        Money m1 = new LocalCurrency();
+        m1.earn(5000);
+        m1.spend(200);
+        System.out.println("v1. left in the pocket " + m1.cash);
         //prints 0
         
         //v2
-        //LocalCurrency m = new LocalCurrency();
+        LocalCurrency m2 = new LocalCurrency();
+        m2.earn(5000);
+        m2.spend(200);
+        System.out.println("v2. left in the pocket " + m2.cash);
         //prints 4900.
     }
 
