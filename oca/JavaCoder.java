@@ -21,7 +21,7 @@ public class JavaCoder {
     public static void main(String[] args) {
         Money m = new LocalCurrency();
         m.earn(5000);
-        m.spent(200);
+        m.spend(200);
         System.out.println();
 
     }
