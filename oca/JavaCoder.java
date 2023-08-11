@@ -19,11 +19,16 @@ class LocalCurrency implements Money{
 public class JavaCoder {
 
     public static void main(String[] args) {
+        //v1
         Money m = new LocalCurrency();
         m.earn(5000);
         m.spend(200);
         System.out.println("left in the pocket " + m.cash);
         //prints 0
+        
+        //v2
+        //LocalCurrency m = new LocalCurrency();
+        //prints 4900.
     }
 
 }
