@@ -42,6 +42,10 @@ public class StringClass {
         a += true;  //112atrue
         System.out.println(a);
         
+        System.out.println("~~~~~~~~~");
+        StringBuilder sb1 = new StringBuilder("Hello");
+        System.out.println(sb1.append("?").equals(sb1.append("!"))); //true because sb1 refers to 1 object even after change.
+        
     }
 
 }
