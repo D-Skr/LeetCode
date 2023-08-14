@@ -34,6 +34,13 @@ public class StringClass {
         System.out.println("~~~~~~~~~~");
         String a = "";
         a = 1 + 10 + a; //a = "11"
+        System.out.println(a);
+        a += 2; //112
+        System.out.println(a);
+        a += 'a';   //112a
+        System.out.println(a);
+        a += true;  //112atrue
+        System.out.println(a);
         
     }
 
