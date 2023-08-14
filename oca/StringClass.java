@@ -30,6 +30,11 @@ public class StringClass {
         System.out.println(s1 == s1.replace("Z","z"));  //true
         System.out.println(s1 == s1.trim());    //true
         System.out.println(s1 == s1.substring(0));  //true
+        
+        System.out.println("~~~~~~~~~~");
+        String a = "";
+        a = 1 + 10 + a; //a = "11"
+        
     }
 
 }
