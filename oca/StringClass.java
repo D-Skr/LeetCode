@@ -1,7 +1,9 @@
 package oca;
 
 public class StringClass {
-
+    static String gimme() {
+        return "world!";
+    }
     public static void main(String[] args) {
         String s1 = "Hello";
         String s2 = new String("Hello");
@@ -12,7 +14,9 @@ public class StringClass {
         System.out.println(s1 == "Hello!".substring(0,5)); //false
         System.out.println(s1 == "Hello".substring(0,5)); //true
         
-
+        System.out.println("~~~~~~~~~~~");
+        
+        
     }
 
 }
