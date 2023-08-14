@@ -19,8 +19,8 @@ public class StringClass {
         String s5 = "Hello " + "world!"; //Constant expression
         String s6 = "Hello " + gimme();
         
-        System.out.println(s4 == s5);
-        System.out.println(s6 == s5);
+        System.out.println(s4 == s5);   //true
+        System.out.println(s6 == s5);   //false
         
     }
 
