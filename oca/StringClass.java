@@ -16,8 +16,10 @@ public class StringClass {
         
         System.out.println("~~~~~~~~~~~");
         String s4 = "Hello world!";
-        String s5 = "Hello " + "world!"; //Constant expression
-        String s6 = "Hello " + gimme();
+        String s5 = "Hello " + "world!"; //Constant expressions are computed at compile time
+            //and treated as literals
+        
+        String s6 = "Hello " + gimme(); //compiled at runtime and does not get interned
         
         System.out.println(s4 == s5);   //true
         System.out.println(s6 == s5);   //false
