@@ -15,8 +15,9 @@ public class StringClass {
         System.out.println(s1 == "Hello".substring(0,5)); //true
         
         System.out.println("~~~~~~~~~~~");
-        String s4 = "Hello world!";
-        String s5 = "Hello " + "world!"; //Constant expressions are computed at compile time
+        String s4 = "Hello world!"; // goes to String pool
+        String s5 = "Hello " + "world!"; // goes to String pool
+            //Constant expressions are computed at compile time
             //and treated as literals
         
         String s6 = "Hello " + gimme(); //compiled at runtime and does not get interned
