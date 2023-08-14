@@ -25,6 +25,10 @@ public class StringClass {
         System.out.println(s4 == s5);   //true
         System.out.println(s6 == s5);   //false
         
+        System.out.println("~~~~~~~~~~~~~");
+        System.out.println(s1 == s1.replace("Z","z"));  //true
+        System.out.println(s1 == s1.trim());    //true
+        System.out.println(s1 == s1.substring(0));  //true
     }
 
 }
