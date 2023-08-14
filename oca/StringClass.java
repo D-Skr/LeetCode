@@ -15,7 +15,12 @@ public class StringClass {
         System.out.println(s1 == "Hello".substring(0,5)); //true
         
         System.out.println("~~~~~~~~~~~");
+        String s4 = "Hello world!";
+        String s5 = "Hello " + "world!"; //Constant expression
+        String s6 = "Hello " + gimme();
         
+        System.out.println(s4 == s5);
+        System.out.println(s6 == s5);
         
     }
 
