@@ -46,6 +46,11 @@ public class StringClass {
         StringBuilder sb1 = new StringBuilder("Hello");
         System.out.println(sb1.append("?").equals(sb1.append("!"))); //true because sb1 refers to 1 object even after change.
         
+        System.out.println("~~~~~~~~~~~~~");
+        int[] arr = {1,2,3,4,5};
+        String str = null;
+        for(int e : arr) {str += e; }
+        System.out.println(str); //null12345
     }
 
 }
