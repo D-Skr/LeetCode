@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Month;
+import java.time.Period;
 
 public class LDTtest {
 
@@ -35,6 +36,10 @@ public class LDTtest {
         //LocalTime.parse("2015-06-15T10:20"); //RTE: java.time.format.DateTimeParseException:
         //LocalDateTime.parse("2015-06-15"); //RTE: java.time.format.DateTimeParseException:
         LocalDateTime.parse("2015-6-15"); //RTE: DTPE because month should be 2 digits, not 1.
+        
+        Period.parse("P1Y2M3D");
+        //same as
+        Period.of(1, 2, 3);
     }
 
 }
