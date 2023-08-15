@@ -25,6 +25,10 @@ public class LDTtest {
         
         System.out.println(LocalDateTime.of(2010, 6, 13, 23, 59));  //2010-06-13T23:59
         System.out.println(LocalDateTime.of(2010, 6, 13, 23, 59, 59));  //2010-06-13T23:59:59
+        
+        //Known trap on the exam
+        //LocalDate.of(2000, 6, 15, 23, 59); //comperr: Unexpected time
+        //LocalDateTime.of(2000, 6, 15); //comperr: missing time
     }
 
 }
