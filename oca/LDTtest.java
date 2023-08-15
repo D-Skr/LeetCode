@@ -33,7 +33,8 @@ public class LDTtest {
         //LocalDate.of(2000, 6, 15, 23, 59); //comperr: Unexpected time
         //LocalDateTime.of(2000, 6, 15); //comperr: missing time
         //LocalTime.parse("2015-06-15T10:20"); //RTE: java.time.format.DateTimeParseException:
-        LocalDateTime.parse("2015-06-15"); //RTE: java.time.format.DateTimeParseException:
+        //LocalDateTime.parse("2015-06-15"); //RTE: java.time.format.DateTimeParseException:
+        LocalDateTime.parse("2015-6-15"); //RTE: DTPE because month should be 2 digits, not 1.
     }
 
 }
