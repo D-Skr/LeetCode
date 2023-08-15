@@ -1,5 +1,7 @@
 package oca;
 
+import java.util.List;
+
 public class ArrTest2 {
 
     public static void main(String[] args) {
@@ -11,6 +13,12 @@ public class ArrTest2 {
         StringBuilder sb = new StringBuilder("Java");
         System.out.println(sb);
         //prints Java
+        
+        List<String> list = java.util.Arrays.asList("one","two"); //asList return immutable list
+        System.out.println(list.toString()); //[one, two]
+        
+        list.add("three"); //RTE: java.lang.UnsupportedOperationException
+        
     }
 
 }
