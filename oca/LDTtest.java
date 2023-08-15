@@ -26,9 +26,13 @@ public class LDTtest {
         System.out.println(LocalDateTime.of(2010, 6, 13, 23, 59));  //2010-06-13T23:59
         System.out.println(LocalDateTime.of(2010, 6, 13, 23, 59, 59));  //2010-06-13T23:59:59
         
+        System.out.println(LocalTime.parse("10:20")); //10:20
+        
         //Known trap on the exam
         //LocalDate.of(2000, 6, 15, 23, 59); //comperr: Unexpected time
         //LocalDateTime.of(2000, 6, 15); //comperr: missing time
+        //LocalTime.parse("2015-06-15T10:20"); //RTE: java.time.format.DateTimeParseException:
+        LocalDateTime.parse("2015-06-15"); //RTE: java.time.format.DateTimeParseException:
     }
 
 }
