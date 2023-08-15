@@ -15,7 +15,9 @@ public class LDTtest {
         //System.out.println(LocalDate.of(2020, Month.JUNE, 31));
         
         System.out.println(LocalDate.of(2020, Month.JUNE, 29)); //2020-06-29
-
+        
+        System.out.println(LocalDateTime.of(2010, 6, 13, 23, 60));
+        System.out.println(LocalDateTime.of(2010, 6, 13, 23, 60));
     }
 
 }
