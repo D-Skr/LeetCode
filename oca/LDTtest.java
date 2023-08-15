@@ -16,8 +16,15 @@ public class LDTtest {
         
         System.out.println(LocalDate.of(2020, Month.JUNE, 29)); //2020-06-29
         
-        System.out.println(LocalDateTime.of(2010, 6, 13, 23, 60));
-        System.out.println(LocalDateTime.of(2010, 6, 13, 23, 60));
+        //System.out.println(LocalDateTime.of(2010, 6, 13, 23, 60));
+        /*
+         * java.time.DateTimeException: Invalid value for MinuteOfHour (valid values 0 - 59): 60
+         * at java.time.temporal.ValueRange.checkValidValue(ValueRange.java:311)
+         * at java.time.temporal.ChronoField.checkValidValue(ChronoField.java:703)
+         */
+        
+        System.out.println(LocalDateTime.of(2010, 6, 13, 23, 59));  //2010-06-13T23:59
+        System.out.println(LocalDateTime.of(2010, 6, 13, 23, 59, 59));  //2010-06-13T23:59:59
     }
 
 }
