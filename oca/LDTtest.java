@@ -25,6 +25,7 @@ public class LDTtest {
         
         System.out.println(LocalDateTime.of(2010, 6, 13, 23, 59));  //2010-06-13T23:59
         System.out.println(LocalDateTime.of(2010, 6, 13, 23, 59, 59));  //2010-06-13T23:59:59
+        System.out.println(LocalDateTime.of(2010, 6, 13, 23, 59, 59, 5999));  //2010-06-13T23:59:59.000005999
         
         System.out.println(LocalTime.parse("10:20")); //10:20
         
