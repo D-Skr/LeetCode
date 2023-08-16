@@ -1,5 +1,6 @@
 package oca;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ArrTest2 {
@@ -17,8 +18,12 @@ public class ArrTest2 {
         List<String> list = java.util.Arrays.asList("one","two"); //asList return immutable list
         System.out.println(list.toString()); //[one, two]
         
-        list.add("three"); //RTE: java.lang.UnsupportedOperationException
+        //list.add("three"); //RTE: java.lang.UnsupportedOperationException
         
+        List list2 = new ArrayList();   //valid
+        List list3 = new ArrayList<>(); //valid
+        //List<> list4 = new ArrayList<>(); //comperr: ncorrect number of arguments for type List<E>
+        List<String> list5 = new ArrayList<>(); //valid and correct
     }
 
 }
