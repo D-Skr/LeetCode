@@ -8,8 +8,8 @@ public class StringTest2 {
         String name1 = fName + lName;
         String name2 = fName + "Gosling";
         String name3 = "James" + "Gosling";
-        System.out.println(name1 == name2);
-        System.out.println(name2 == name3);
+        System.out.println(name1 == name2); //false
+        System.out.println(name2 == name3); //true
 
     }
 
