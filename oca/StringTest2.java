@@ -12,6 +12,11 @@ public class StringTest2 {
         System.out.println(name2 == name3); //true
         
         System.out.println("~~~~~~~~~~");
+        
+        int a = 2;
+        boolean res = false;
+        res = a++ == 2 || --a == 2 && --a == 2;
+        System.out.println(a);  //3
 
     }
 
