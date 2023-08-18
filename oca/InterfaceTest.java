@@ -19,7 +19,9 @@ public class InterfaceTest extends Object implements I01 {
         
         //add(10.0, new Double(10));    //comperr The method add(double, double) is ambiguous for the type InterfaceTest
         
-
+        String s1 = "asdf";
+        String s2 = "dfdasdf";
+        System.out.println(s1 = s2);
     }
 
 }
