@@ -1,7 +1,7 @@
 package oca;
 
 interface I01 {
-    void m1();
+    void m1();  //same as public abstract void m1();
 }
 
 public class InterfaceTest extends Object implements I01 {
