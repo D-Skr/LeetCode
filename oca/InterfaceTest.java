@@ -1,5 +1,9 @@
 package oca;
 
+interface I01 {
+    void m1();
+}
+
 public class InterfaceTest {
 
     public static void main(String[] args) {
