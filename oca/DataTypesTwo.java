@@ -7,9 +7,9 @@ public class DataTypesTwo {
         Integer i2 = new Integer(i1);
         
         //String s; //comperr: The local variable s may not have been initialized
-        String s = null;
+        String s = null;    //valid
         Boolean b = Boolean.valueOf(s);
-        System.out.println(b);
+        System.out.println(b);  //false
 
     }
 
