@@ -10,6 +10,12 @@ public class DataTypesTwo {
         String s = null;    //valid
         Boolean b = Boolean.valueOf(s);
         System.out.println(b);  //false
+        
+        char c = '7';
+        int a = c;
+        System.out.println(c);  //7
+        System.out.println(a);  //55
+        
 
     }
 
