@@ -80,6 +80,7 @@ public class SwitchTest {
             System.out.println("");
             // System.out.println("2"); //Comp error. Syntax error, insert "while ( Expression ) ;" to complete DoStatement
         while(true);
+        //Boolean b = new Boolean("tRue"); unreachable code, comperr
     }
 
 }
