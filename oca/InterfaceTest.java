@@ -7,7 +7,8 @@ interface I01 {
 }
 
 public class InterfaceTest extends Object implements I01 {
-    String InterfaceTest;
+    String InterfaceTest;   //valid var name
+    public void InterfaceTest() {} //valid method name
 
     protected void m1() {} //m1 is public implicitly in I01, should be public here as well, but no comperr
     
