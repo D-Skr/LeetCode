@@ -7,6 +7,8 @@ public class main {
         String s1 = "StringS";
         System.out.println(s1.indexOf('S'));
         System.out.println(s1.charAt(s1.indexOf('S')+2));
+        String arr1[], arr2, arr3 = null;
+        
     }
 
 }
