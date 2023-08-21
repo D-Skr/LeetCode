@@ -12,10 +12,15 @@ public class DataTypesTwo {
         System.out.println(b);  //false
         
         char c = '7';
-        int a = c;
+        int d = c;
         System.out.println(c);  //7
-        System.out.println(a);  //55
+        System.out.println(d);  //55
         
+        
+        int a = 7;
+        boolean res = a++ == 7 && ++a == 9 || a++ == 9;
+        System.out.println("a = " + a);
+        System.out.println("res = " + res);
 
     }
 
