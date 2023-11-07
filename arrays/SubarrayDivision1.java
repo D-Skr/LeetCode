@@ -1,6 +1,8 @@
 package arrays;
 
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /*
      * Complete the 'birthday' function below.
@@ -16,28 +18,22 @@ public class SubarrayDivision1 {
     
     public static int birthday(List<Integer> s, int d, int m) {
         int result = 0;
-        if(m ==1) {
-            for(Integer i : s){
-                if(i == d) result++;
-            }
-        }
-        if (s.size()< m) return 0;
-        if(m > 1) {
-            for(int i = 0; i < s.size()-m; i++){
-                int sum = s.get(i);
-                while(m > 1){
-                    sum += s.get(i+m-1);
-                    m--;
-                }
-                if(sum == d) result++;
-            }
+        int i = 0;
+        while(m < s.size()) {
+            int sum = 0;
+            List<Integer> temp = s.subList(i, m);
+            sum = temp.stream().collect(Collectors.summingInt(Integer::intValue));
+            if(sum == d) result++;
+            i++;
+            m++;
         }
         return result;
     }
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
-
+        
+        List<Integer> list = Arrays.asList(2,2,1,3,2);
+        System.out.println(birthday(list, 4, 2));
     }
 
 }
