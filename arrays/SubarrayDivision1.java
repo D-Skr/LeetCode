@@ -31,8 +31,8 @@ public class SubarrayDivision1 {
                 }
                 if(sum == d) result++;
             }
-        return result;
         }
+        return result;
     }
 
     public static void main(String[] args) {
