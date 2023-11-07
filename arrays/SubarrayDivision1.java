@@ -19,7 +19,7 @@ public class SubarrayDivision1 {
     public static int birthday(List<Integer> s, int d, int m) {
         int result = 0;
         int i = 0;
-        while(m < s.size()) {
+        while(m <= s.size()) {
             int sum = 0;
             List<Integer> temp = s.subList(i, m);
             sum = temp.stream().collect(Collectors.summingInt(Integer::intValue));
